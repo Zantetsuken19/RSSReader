@@ -19,17 +19,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtURL"
-        android:hint="Enter URL here"/>
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/txtURL"-->
+        <!--android:hint="Enter URL here"/>-->
 
-    <Button
-        android:id="@+id/btnRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Refresh"/>
+    <!--<Button-->
+        <!--android:id="@+id/btnRefresh"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Refresh"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,7 +39,9 @@
         <ListView
             android:id="@+id/list"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_height="wrap_content">
+
+        </ListView>
 
     </LinearLayout>
 

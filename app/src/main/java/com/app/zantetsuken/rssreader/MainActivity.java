@@ -43,17 +43,17 @@ public class MainActivity extends AppCompatActivity
 
     private void initialize()
     {
-        _txtURL = (EditText)findViewById(R.id.txtURL);
-        _btnRefresh = (Button)findViewById(R.id.btnRefresh);
-        _btnRefresh.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                _adapter.setURL(_txtURL.getText().toString());
-                _adapter.refreshList();
-            }
-        });
+//        _txtURL = (EditText)findViewById(R.id.txtURL);
+//        _btnRefresh = (Button)findViewById(R.id.btnRefresh);
+//        _btnRefresh.setOnClickListener(new View.OnClickListener()
+//        {
+//            @Override
+//            public void onClick(View v)
+//            {
+//                _adapter.setURL(_txtURL.getText().toString());
+//                _adapter.refreshList();
+//            }
+//        });
 
         createAdapter();
     }
@@ -90,7 +90,8 @@ public class MainActivity extends AppCompatActivity
         {
             ListView lv = (ListView)v;
 
-            _adapter = new RSSListAdapter(this, "http://www.pcworld.com/index.rss");
+//            _adapter = new RSSListAdapter(this, "http://www.pcworld.com/index.rss");
+            _adapter = new RSSListAdapter(this, R.layout.rss_image_list, "http://fotocewekcantik.thisistap.com/feed/");
             lv.setAdapter(_adapter);
             _adapter.refreshList();
         }
